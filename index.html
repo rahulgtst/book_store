@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="book.png" type="image/x-icon" />
+    <title>Library</title>
+  </head>
+  <body>
+    <header>
+      <h1>Library</h1>
+      <button class="add">Add books +</button>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <h2>Add a new book</h2>
+        <label for="name">Enter the Book Name<sup>*</sup>: </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          autocomplete="off"
+          placeholder="Which book you want to add"
+          required
+        />
+        <label for="author">Enter the author of Book<sup>*</sup>: </label>
+        <input
+          required
+          type="text"
+          id="author"
+          name="author"
+          autocomplete="off"
+          placeholder="Who is the author of book"
+        />
+        <label for="pages">Enter the number of Pages<sup>*</sup>: </label>
+        <input
+          required
+          name="pages"
+          id="pages"
+          autocomplete="off"
+          placeholder="0"
+        />
+        <section>
+          <label for="isRead">Have yoy read it?<sup>*</sup> </label>
+          <input type="checkbox" name="isRead" id="isRead" autocomplete="off" />
+        </section>
+        <button type="submit" class="upload">Upload</button>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
