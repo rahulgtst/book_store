@@ -71,7 +71,7 @@ addButton.addEventListener("click", () => {
 });
 
 uploadButton.addEventListener("click", (e) => {
-  e.preventDefault();
+  e.parentElement.preventDefault();
   let newBook = new Book(
     form.name.value,
     form.author.value,
